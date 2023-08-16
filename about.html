@@ -6,66 +6,119 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add your custom CSS -->
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="img/Untitled design (18).png" alt="logo">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">
+            <img src="img/Untitled_design__18_-removebg-preview.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <nav>
-      <div class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="store.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+</nav>
 
-  <div class="aboutus containers">
-    <div class="aboutus-top">
-      <h1 class="aboutus-tittle">Abo<span>u</span>t</h1>
-      <p class="aboutus-p">Welcome to our premium car wash services! We take pride in offering a wide range of
-        top-notch options to keep your vehicle looking its absolute best. From our signature full detail car wash,
-        where every inch of your car receives the royal treatment, to our specialized engine detail wash that brings
-        new life to your engine bay, our expert team ensures no detail is overlooked. You can trust us to deliver
-        unmatched quality, exceptional customer service, and a gleaming ride that turns heads on the road. Choose our
-        car wash services today and let us pamper your prized possession!
-      </p>
+
+
+  <div class="wrapper">
+
+    <div class="background-container">
+      <div class="bg-1"></div>
+      <div class="bg-2"></div>
+
+    </div>
+    <div class="about-container">
+
+      <div class="image-container">
+        <img src="./img/emile-guillemot-ci7gkM_29wA-unsplash.jpg" alt="">
+
+      </div>
+
+      <div class="text-container">
+        <h1 class="section-title">Abo<span>u</span>t Us</h1>
+        <p> We take pride in offering a wide range of
+          top-notch options to keep your vehicle looking its absolute best. From our signature full detail car wash,
+          where every inch of your car receives the royal treatment, to our specialized engine detail wash that brings
+          new life to your engine bay, our expert team ensures no detail is overlooked. You can trust us to deliver
+          unmatched quality, exceptional customer service, and a gleaming ride that turns heads on the road.</p>
+        <a href="contact.html">Contact US</a>
+      </div>
+
     </div>
   </div>
 
-  <footer>
-    <div class="footer-logo">
-      <img src="img/Untitled design (18).png" alt="Your Company Logo">
+
+  <footer class="footer bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-info">
+                    <p>Car Detailing</p>
+                    <p>123 Street, City, State ZIP</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@eddieg.com</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-links">
+                    <h5><span>Quick Links</span></h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-legal-links">
+                    <h5><span>Legal</span></h5>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
+            </div>
+        </div>
     </div>
-    <div class="footer-info">
-      <p>Car Detailing</p>
-      <p>123 Street, City, State ZIP</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@eddieg.com</p>
-    </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="footer-legal-links">
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <p>&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
-  </footer>
+</footer>
+
+
+
+
+   <!-- Add Bootstrap JS scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
 
 </body>
 

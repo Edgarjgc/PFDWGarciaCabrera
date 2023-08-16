@@ -5,167 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car wash</title>
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-    <section id="header">
-        <header>
-            <div class="logo">
-                <img src="img/Untitled design (18).png" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="store.html">Shop</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img src="img/Untitled_design__18_-removebg-preview.png" alt="logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    </section>
-
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Welcome <span></span></h1>
-                <h1>to the Ultimate <span></span></h1>
-                <h1> Auto Detailing Experience <span></span></h1>
-                <a href="contact.html" type="button" class="cta">Contact Us</a>
             </div>
         </div>
-
+    </nav>
+    <section id="hero" class="hero text-center py-5">
+        <div class="background-image">
+            <img src="/img/cleaning.jpg" alt="Background Image">
+        </div>
+        <div class="container">
+            <h1 class="display-4">Welcome <span></span></h1>
+            <h1 class="display-4">to the Ultimate <span></span></h1>
+            <h1 class="display-4">Auto Detailing Experience <span></span></h1>
+            <a href="contact.html" type="button" class="btn btn-primary cta">Contact Us</a>
+        </div>
     </section>
 
-    <div class="section-box">
-        <h2 class="huno">All services are backed by the Mobile Detailing Pros "Peace-of-Mind Guarantee"</h2>
-    
-        <div class="content">
-            <p>At Mobile Detailing Pros, we put the customer first and always do our best to ensure complete
-                satisfaction with
-                each detailing service. The appearance of our client’s vehicles is of great importance to us, which is
-                why we
-                hold each of our professional mobile detailing technicians to meticulous standards in order to ensure
-                the
-                highest quality of service. This includes the use of only the finest products, in addition to making
-                sure each
-                technician is thoroughly trained and kept up-to-date with the most advanced techniques in the car
-                detailing
-                industry. We strive to not only meet our clients’ expectations, but to exceed them through unparalleled
-                service
-                and the convenient luxury of a mobile detailing service. Contact us today for more information or to
-                schedule a
-                service.</p>
+    <div class="section-box py-5">
+        <div class="container">
+            <h2 class="h1">All services are backed by the Mobile Detailing Pros "Peace-of-Mind Guarantee"</h2>
+            <div class="content">
+                <p>At Mobile Detailing Pros, we put the customer first and always do our best to ensure complete
+                    satisfaction with each detailing service. The appearance of our client’s vehicles is of great
+                    importance to us, which is why we hold each of our professional mobile detailing technicians to
+                    meticulous standards in order to ensure the highest quality of service. This includes the use of
+                    only the finest products, in addition to making sure each technician is thoroughly trained and
+                    kept up-to-date with the most advanced techniques in the car detailing industry. We strive to
+                    not only meet our clients’ expectations, but to exceed them through unparalleled service and the
+                    convenient luxury of a mobile detailing service. Contact us today for more information or to
+                    schedule a service.</p>
+            </div>
         </div>
     </div>
 
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-tittle"> Recents <span>Projects</span></h1>
+    <div class="container">
+        <h2 class="h2 section-title">Featured Prod<span>u</span>cts</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="img/Detailing bucket.jpg" alt="" class="img-fluid">
+                <h4>Ceramic Coating</h4>
             </div>
-            <div class="allprojects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 1</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sed distinctio deserunt saepe
-                            earum cumque velit placeat debitis quisquam recusandae!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cleaning.jpg" alt="img">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="img/clay bar.jpg" alt="" class="img-fluid">
+                <h4>Clay Bar</h4>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="img/Leather kit.jpg" alt="" class="img-fluid">
+                <h4>Leather Kit</h4>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="img/interior cleaning product.jpg" alt="" class="img-fluid">
+                <h4>Interior Cleaning Product</h4>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <h2 class="h1 section-title"> Recent Proj<span>e</span>cts</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="slider/IMG_4072.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="slider/IMG_4073.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="slider/IMG_4075.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="slider/IMG_4077.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-info">
+                        <p>Car Detailing</p>
+                        <p>123 Street, City, State ZIP</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: info@eddieg.com</p>
                     </div>
                 </div>
-               
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 2</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sed distinctio deserunt saepe
-                            earum cumque velit placeat debitis quisquam recusandae!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cleaning.jpg" alt="img">
-
+                <div class="col-md-4">
+                    <div class="footer-links">
+                        <h5><span>Quick Links</span></h5>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 3</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sed distinctio deserunt saepe
-                            earum cumque velit placeat debitis quisquam recusandae!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cleaning.jpg" alt="img">
-
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 4</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sed distinctio deserunt saepe
-                            earum cumque velit placeat debitis quisquam recusandae!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cleaning.jpg" alt="img">
-
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 5</h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sed distinctio deserunt saepe
-                            earum cumque velit placeat debitis quisquam recusandae!</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="img/cleaning.jpg" alt="img">
-
+                <div class="col-md-4">
+                    <div class="footer-legal-links">
+                        <h5><span>Legal</span></h5>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="privacy.html">Privacy Policy</a>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
+                </div>
+            </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-
-    <footer>
-        <div class="footer-logo">
-            <img src="img/Untitled design (18).png" alt="logo">
-        </div>
-        <div class="footer-info">
-            <p>Car Detailing</p>
-            <p>123 Street, City, State ZIP</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: info@eddieg.com</p>
-        </div>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-legal-links">
-            <a href="terms.html">Terms of Service</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-        <p>&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
     </footer>
-
-</body>
-
-</html>
+    
+            </div> <!-- Close the container for the footer section -->
+            
+            <!-- Add your custom scripts or additional content here -->
+            
+            <!-- Bootstrap JS and other scripts -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+            </body>
+            </html>
+            

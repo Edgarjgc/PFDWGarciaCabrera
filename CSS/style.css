@@ -5,30 +5,23 @@
 }
 
 html {
-    font-size: 20px;
+    font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 
 a {
     text-decoration: none;
 }
 
-.container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Header */
 header {
     background-color: #333;
-    color: #fff;
+    color: black;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -36,99 +29,46 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
-    height: auto;
+    max-width: 300px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 10px;
-}
-
-nav ul li:first-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
+/* hover color nav bar */
 nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-/* Hamburger menu for mobile and tablets */
-
-.menu-icon {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    flex-direction: column;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: transform 0.3s ease;
-}
-
-
-/* Show the menu items when the hamburger menu is active */
-.menu-toggle:checked~nav ul {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Show hamburger menu icon and hide the regular menu */
-.menu-toggle {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-
-    /* Show hamburger menu icon and hide the regular menu */
-    .menu-toggle:checked~.menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Show the hamburger menu icon */
-    .menu-icon {
-        display: block;
-    }
-
-    /* Hide the regular menu items */
-    nav ul {
-        display: none;
-    }
+    background-color: crimson;
+    color: black;
 }
 
 /* end of header*/
 
 /* Hero Section */
+
+/* Style for the background image container */
+.background-image {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Place the background image behind other content */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+}
+
+/* Rest of your existing .hero styles */
 .hero {
-    background-image: url(/img/cleaning.jpg);
-    background-size: cover;
-    background-position: top center;
     position: relative;
     z-index: 1;
+    height: 1000px;
 }
+
+/* ... other styles for the hero section ... */
 
 .hero ::after {
     content: '';
@@ -137,13 +77,12 @@ nav ul li a:hover {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
     opacity: .3;
     z-index: -1;
 }
 
-.hero .hero {
-    max-width: 1200px;
+#hero .hero {
+
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
@@ -153,7 +92,9 @@ nav ul li a:hover {
 .hero h1 {
     display: block;
     width: fit-content;
-    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -215,7 +156,6 @@ nav ul li a:hover {
 .hero .cta:hover {
     color: white;
     background-color: crimson;
-
 }
 
 /*End Hero Section*/
@@ -263,84 +203,191 @@ nav ul li a:hover {
     line-height: 1.9rem;
 
 }
-/* Index media querie */
 
-@media screen and (max-width: 768px) {
-#hero .container h1 {
-    font-size: 2rem;
-   
-}
-.hero .cta {
-    font-size: 1.5rem;
+.row {
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 
 }
-.huno {
-font-size: 1.5rem;
 
-}
-.content p {
-    font-size: 1.1rem;
-}
+.container h1 {
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-@media screen and (max-width: 480px) {
-    #hero .container h1 {
-        font-size: 1.6rem;
-      
-}
-.hero .cta {
-    font-size: 1.2rem;
-}
-.huno {
-    font-size: 1.3rem;
-}
-.content p {
-    font-size: .8rem;
-}
-
-
-}
-/* End index media querie*/
 /* End of Index*/
 
 /* About Page*/
 
-.aboutus {
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.bg-1 {
+    flex: 1;
+    background-color: rgb(10, 12, 10);
+}
+
+.bg-2 {
+    flex: 1;
+    background-color: rgb(156, 26, 26);
+}
+
+.about-container {
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: white;
+    box-shadow: 24px 24px 30px #7d8b99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 50px 0;
+    font-size: 22px;
 }
 
-.aboutus-tittle {
-    font-size: 3rem;
-    font-weight: 300;
+.text-container h1 {
+    font-size: 70px;
+    padding: 20px 0px;
+}
+
+.text-container a {
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: black;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+
+.text-container a:hover {
+    background-color: crimson;
     color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-    margin-bottom: 30px;
+    border: 2px solid crimson;
 }
 
-.aboutus-tittle span {
-    color: crimson;
+
+@media screen and (max-width: 1200x) {
+    .about-container {
+        width: 90%;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-container h1 {
+        font-size: 50px;
+    }
 }
 
-.aboutus-p {
-    font-size: 1rem;
-    margin-top: 5px;
-    line-height: 2rem;
-    font-weight: 300px;
-    letter-spacing: .05rem;
+@media screen and (max-width: 1100px) {
+    .about-container {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .text-container {
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 700px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .image-container img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .text-container h1 {
+        font-size: 35px;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .image-container img {
+        width: 300px;
+        height: 200px;
+        margin-top: 400px;
+    }
+
+    .text-container h1 {
+        font-size: 25px;
+    }
+
+    .text-container p {
+        font-size: 15px;
+    }
+
+    .text-container a {
+        margin-bottom: 400px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        height: 80%;
+
+    }
 }
 
 /*end about page*/
 
 /* services */
 
-.section-tittle {
+.section-title {
     font-size: 3rem;
     font-weight: 300;
     color: black;
@@ -350,7 +397,7 @@ font-size: 1.5rem;
     margin-top: 30px;
 }
 
-.section-tittle span {
+.section-title span {
     color: crimson;
 }
 
@@ -461,10 +508,11 @@ font-size: 1.5rem;
 /* end Services products*/
 
 /* Media queri services */
+/*borrar*/
 
 @media screen and (max-width: 768px) {
 
-    .section-tittle {
+    .section-title {
         font-size: 2rem;
     }
 
@@ -474,7 +522,7 @@ font-size: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {
-    .section-tittle {
+    .section-title {
         font-size: 1.5rem;
     }
 
@@ -666,6 +714,7 @@ img {
     letter-spacing: 3px;
     cursor: pointer;
 }
+
 /* end of product section*/
 /* Shop Media Queries */
 @media screen and (min-width: 992px) {
@@ -715,8 +764,6 @@ img {
 }
 
 /*end shop */
-
-
 /*contact form*/
 
 main {
@@ -730,18 +777,13 @@ main {
 }
 
 .contact-t {
-    background-color: #f5f5f5;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     text-align: center;
     font-size: 3rem;
     font-weight: 300;
     color: black;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
-
 }
 
 .contact-t span {
@@ -801,13 +843,17 @@ form input[type="submit"]:hover {
     }
 }
 
+h5 span {
+    color: crimson;
+}
+
 /* end contact form*/
 
 /*footer*/
 
 footer {
     background-color: #333;
-    color: #f2f2f2;
+    color: white;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -817,22 +863,20 @@ footer {
     border-top: #333 20px;
 }
 
-.footer-logo img {
-    width: 80px;
-}
-
 .footer-info {
     margin-bottom: 10px;
 }
 
 .footer-info p {
-    margin: 5px 0;
+    margin: 15px 0;
+    padding-top: 10px;
     font-size: 14px;
+    color: white;
 }
 
 .footer-links a {
     margin: 0 10px;
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 

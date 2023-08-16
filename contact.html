@@ -6,81 +6,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add your custom CSS -->
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="img/Untitled design (18).png" alt="logo">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">
+            <img src="img/Untitled_design__18_-removebg-preview.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Added class="menu-toggle" -->
-    <label for="menu-toggle" class="menu-icon">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </label>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="store.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+</nav>
 
-  <div>
-    <h1 class="contact-t">Cont<span>a</span>ct
-    </h1>
-
+  <div class="container mt-5">
+    <h1 class="contact-t">Cont<span>a</span>ct</h1>
   </div>
   <main class="contact-main">
-    <form action="submit.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="submit.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required class="form-control">
+            </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required class="form-control">
+            </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required class="form-control"></textarea>
+            </div>
 
-      <input type="submit" value="Submit">
-    </form>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
 
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19351.670011847533!2d-122.41941517279053!3d37.77492949624735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1626157836282!5m2!1sen!2s"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="col-md-6">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19351.670011847533!2d-122.41941517279053!3d37.77492949624735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1626157836282!5m2!1sen!2s"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
+  <footer class="footer bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-info">
+                    <p>Car Detailing</p>
+                    <p>123 Street, City, State ZIP</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@eddieg.com</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-links">
+                    <h5><span>Quick Links</span></h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-legal-links">
+                    <h5><span>Legal</span></h5>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-  <footer>
-    <div class="footer-logo">
-      <img src="img/Untitled design (18).png" alt="Your Company Logo">
-    </div>
-    <div class="footer-info">
-      <p>Car Detailing</p>
-      <p>123 Street, City, State ZIP</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@eddieg.com</p>
-    </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="footer-legal-links">
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <p>&copy; 2023 Edgar Garcia Cabrera | All rights reserved.</p>
-  </footer>
-
+  <!-- Add Bootstrap JS scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
