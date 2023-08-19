@@ -112,5 +112,19 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .display-4{
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .display-4 {
+      font-size: 1.5rem;
+    }
+
+  }
+
   
   /*End Hero Section*/
