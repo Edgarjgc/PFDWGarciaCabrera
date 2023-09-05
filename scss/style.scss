@@ -204,6 +204,13 @@
     }
   }
   
+  @media screen and (max-width: 350px) {
+    .image-container img {
+      width: 200px;
+      height: 180px;
+    
+    }
+  }
   /*end about page*/
   
   /* services */
